@@ -2,11 +2,14 @@ package dyr;
 
 public class Dyr {
 	private int alder;
+	private double vægt;
 	
-	public Dyr(int alder) {
+	public Dyr(int alder, double vægt) {
 		this.alder = alder;
+		this.vægt = vægt;
 		System.out.println("Dyr: superklasse");
-		System.out.println("Alder på dyret: " + alder);
+		System.out.println("Alder: " + alder);
+		System.out.println("Vægt: " + vægt);
 	}
 	
 	public void spiser() {
@@ -18,14 +21,19 @@ public class Dyr {
 		return alder;
 	}
 	
+	public double getVægt() {
+		return vægt;
+	}
+	
 	public static void main(String[] arg) {
-		Dyr dyr1 = new Dyr(10);
-		Hund hund1 = new Hund(22);
-		Kat kat1 = new Kat(3);
+		Dyr dyr1 = new Dyr(10, 22.6);
+		Hund hund1 = new Hund(22, 43.89);
+		Kat kat1 = new Kat(3, 10.01);
 		dyr1.spiser();
+		System.out.println("Dyrets alder: " + dyr1.getAlder());
+		System.out.println("Dyrets vægt: " + dyr1.getVægt());
 		hund1.gø();
 		kat1.miav();
-		System.out.println(dyr1.getAlder());
 		
 		
 	}
