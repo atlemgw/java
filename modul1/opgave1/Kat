@@ -2,8 +2,8 @@ package dyr;
 
 public class Kat extends Dyr {
 	
-	public Kat(int alder) {
-		super(alder);
+	public Kat(int alder, double vægt) {
+		super(alder, vægt);
 		System.out.println("Kat: subklasse");
 	}
 	
