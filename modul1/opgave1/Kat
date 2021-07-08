@@ -1,0 +1,14 @@
+package dyr;
+
+public class Kat extends Dyr {
+	
+	public Kat(int alder) {
+		super(alder);
+		System.out.println("Kat: subklasse");
+	}
+	
+	public void miav() {
+		System.out.println("Katten miaver");
+	}
+
+}
