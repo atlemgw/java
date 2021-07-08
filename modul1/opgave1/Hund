@@ -2,9 +2,10 @@ package dyr;
 
 public class Hund extends Dyr {
 	
-	public Hund(int alder) {
-		super(alder); // vi reffererer til Dyrs konstruktører
+	public Hund(int alder, double vægt) {
+		super(alder, vægt); // vi reffererer til Dyrs konstruktører
 		System.out.println("Hund: subklasse");
+		
 	}
 	
 	public void gø() {
