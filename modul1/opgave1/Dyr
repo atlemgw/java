@@ -1,0 +1,32 @@
+package dyr;
+
+public class Dyr {
+	private int alder;
+	
+	public Dyr(int alder) {
+		this.alder = alder;
+		System.out.println("Dyr: superklasse");
+		System.out.println("Alder på dyret: " + alder);
+	}
+	
+	public void spiser() {
+		System.out.println("Dyret spiser");
+	}
+	
+	// getters - fordi vi satte alder til private
+	public int getAlder() {
+		return alder;
+	}
+	
+	public static void main(String[] arg) {
+		Dyr dyr1 = new Dyr(10);
+		Hund hund1 = new Hund(22);
+		Kat kat1 = new Kat(3);
+		dyr1.spiser();
+		hund1.gø();
+		kat1.miav();
+		System.out.println(dyr1.getAlder());
+		
+		
+	}
+}
