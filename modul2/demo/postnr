@@ -1,0 +1,21 @@
+public class Postnr
+{
+    public static void main(String[] arg)
+    {
+	java.util.Scanner indtast = new java.util.Scanner(System.in);
+
+	System.out.println("Indtast postnr: ");
+	int postnr;
+	postnr = indtast.nextInt();
+	indtast.nextLine();
+
+	if (postnr < 3000)
+	    System.out.println("Du bor i Hovedstadsområdet.");
+	else if (postnr < 4000)
+	    System.out.println("Du bor i Nordsjælland.");
+	else if (postnr < 5000)
+	    System.out.println("Du bor på Vestsjælland.");
+	else
+	    System.out.println("Du bor Vest for Storebælt");
+    }
+}
